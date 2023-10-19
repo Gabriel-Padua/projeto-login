@@ -1,0 +1,144 @@
+@charset "UTF-8";
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    font-size: 1em;
+    
+}
+html{
+    height: 100%;
+}
+body{
+    background-color: #014d1e;
+}
+
+main{
+    width: 259px;
+    height: 550px;
+    margin: auto;
+    background-color: rgb(233, 231, 231);
+    border-radius: 20px;
+    display: block;
+    padding: 10px;
+    margin-top: 100px;
+    font-size: .8em;
+    text-align: center;
+    
+     
+}
+ main > div {
+     background-image: url(../imagens/bg-ar.jpg); 
+    background-position: top right;
+    height: 220px;
+    border-radius: 20px 20px 0px 0px;
+    margin: -10px -10px 20px -10px;
+} 
+
+
+
+h1{
+    font-size: 2em;
+}
+p#intro {
+   text-align: justify; 
+   padding: 6px;
+}
+
+p#alogin{
+    
+    background-color: #00270f;
+    border-radius: 9px;
+    width: 240px;
+   
+    margin-bottom:5px;
+}
+
+input#ilogin{
+    border-radius: 9px;
+    width: 200px;
+    height: 37px;
+    padding: 20px;
+    margin-left: 12px;
+    background-color: #01c54c;
+    margin-bottom: 3px;
+    
+   
+}
+
+input#isenha{
+    border-radius: 9px;
+    width: 200px;
+    height: 37px;
+    padding: 20px;
+    margin-left: 12px;
+    background-color: #01c54c;
+   
+    
+    
+    
+}
+p#asenha{
+    position: relative;
+    background-color: #00270f;
+    border-radius: 9px;
+    width: 240px;
+    
+    margin-bottom:5px;
+    
+}
+
+input#ientrar{
+    display: block;
+    margin: auto;
+    width:240px;
+    border-radius: 5px;
+    padding: 8px;
+    background-color: #019138;
+    color: white;
+    margin-bottom:5px;
+}
+input#iesq{
+    display: block;
+    margin: auto;
+    width: 240px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: white;
+    color:  #01792f;
+    border-color:#01792f; 
+
+}
+
+#iconl{
+    position: relative;
+    background-position: center bottom;
+    color: white;
+
+    
+   
+   
+
+    
+    
+}
+
+#icons{
+    color: white;
+    display: inline-block; 
+    
+    
+}
+
+
+
+input#ientrar:hover{
+    background-color:#015220 ; 
+}
+input#iesq:hover{
+   color: white;
+   background-color:#01ad43 ;
+   margin-bottom: -20px;
+}
