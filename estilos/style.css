@@ -1,144 +1,150 @@
 @charset "UTF-8";
 
+/* 
+   Paleta de cores
+    #00270f
+    #01c54c
+    #019138
+    */
+    
 *{
     margin: 0%;
     padding: 0%;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    font-size: 1em;
-    
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing:border-box ;
 }
-html{
-    height: 100%;
-}
-body{
-    background-color: #014d1e;
+
+body, html{
+    background-color:#00270f ;
+    height: 100vh;
+    width: 100vw;
 }
 
 main{
-    width: 259px;
-    height: 550px;
-    margin: auto;
-    background-color: rgb(233, 231, 231);
-    border-radius: 20px;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    width: 250px;
+    height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    
+}
+
+section#login div#imagem{
+    display: block;
+    background: url(../imagens/bg-ar.jpg) top right /cover no-repeat fixed;
+    height: 200px;
+}
+
+section#login div#formulario{
     display: block;
     padding: 10px;
-    margin-top: 100px;
-    font-size: .8em;
+}
+
+div#formulario{
     text-align: center;
-    
-     
+    margin-bottom: 10px;
+
 }
- main > div {
-     background-image: url(../imagens/bg-ar.jpg); 
-    background-position: top right;
-    height: 220px;
-    border-radius: 20px 20px 0px 0px;
-    margin: -10px -10px 20px -10px;
-} 
+
+div#formulario p {
+    font-size: 0.8em;
+}
+
+.campo{
+ background-color: #00270f;
+ display: block;
+ width: 100%;
+ height: 40px;
+ border-radius: 5px;
+ margin: 5px 0px;
+ border: 2px solid #00270f;
+}
+
+form label {
+    display: none;
+}
+
+form input[type=submit]{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#01c54c;
+   
+    color:white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: #014b1d;
+}
 
 
+form a.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    margin-top: 7px;
+    padding-top: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #00270f ;
+    border: 1px solid #00270f;
+    text-decoration: none;
+}
 
-h1{
+a.botao span{
+    font-size: 0.8em;
+}
+
+a.botao:hover{
+    background-color: #018031;
+    color: white;
+  
+}
+
+.campo span {
+    color: white;
+    
     font-size: 2em;
-}
-p#intro {
-   text-align: justify; 
-   padding: 6px;
+    width: 40px;
+    padding: 5px;
 }
 
-p#alogin{
-    
-    background-color: #00270f;
-    border-radius: 9px;
-    width: 240px;
-   
-    margin-bottom:5px;
-}
-
-input#ilogin{
-    border-radius: 9px;
-    width: 200px;
-    height: 37px;
-    padding: 20px;
-    margin-left: 12px;
-    background-color: #01c54c;
-    margin-bottom: 3px;
-    
-   
-}
-
-input#isenha{
-    border-radius: 9px;
-    width: 200px;
-    height: 37px;
-    padding: 20px;
-    margin-left: 12px;
-    background-color: #01c54c;
-   
-    
-    
-    
-}
-p#asenha{
-    position: relative;
-    background-color: #00270f;
-    border-radius: 9px;
-    width: 240px;
-    
-    margin-bottom:5px;
-    
-}
-
-input#ientrar{
-    display: block;
-    margin: auto;
-    width:240px;
+.campo input{
+    background-color: #3fe27e;
+    font-size: 1em;
+    width: calc(100% - 45px); 
+    height: 100%;
     border-radius: 5px;
-    padding: 8px;
-    background-color: #019138;
-    color: white;
-    margin-bottom:5px;
+    border: 0px;
+    transform: translateY(-12px);
+    
 }
-input#iesq{
-    display: block;
-    margin: auto;
-    width: 240px;
-    padding: 8px;
-    border-radius: 5px;
+
+div.campo input:focus-within{
     background-color: white;
-    color:  #01792f;
-    border-color:#01792f; 
-
+    border:none;
 }
 
-#iconl{
-    position: relative;
-    background-position: center bottom;
-    color: white;
-
-    
-   
-   
-
-    
-    
-}
-
-#icons{
-    color: white;
-    display: inline-block; 
-    
-    
-}
-
-
-
-input#ientrar:hover{
-    background-color:#015220 ; 
-}
-input#iesq:hover{
-   color: white;
-   background-color:#01ad43 ;
-   margin-bottom: -20px;
+p{
+    padding-bottom: 10px;
 }
